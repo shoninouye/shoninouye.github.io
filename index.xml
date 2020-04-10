@@ -6,10 +6,20 @@
     <description>Recent content on Shon Inouye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tidy Tuesday Analysis - Tour de France</title>
+      <link>/blog/tidy-tuesday-analysis-tour-de-france/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tidy-tuesday-analysis-tour-de-france/</guid>
+      <description>Tidy Tuesday This is my first (published) analysis of Tidy Tuesday data. Tidy Tuesday is a data project that allows anyone to practice their wrangling and data visualization skills on weekly posted datasets. Check out out the Tidy Tuesday GitHub repo to learn more and #TidyTuesday on Twitter to see some examples.
+ Tour de France - Intro This Tidy Tuesday analysis revolves around Tour de France data. Tour de France is the world’s most prestegious and difficult bicycle race that occurs every summer in France.</description>
+    </item>
     
   </channel>
 </rss>
