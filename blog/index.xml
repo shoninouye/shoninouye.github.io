@@ -6,20 +6,19 @@
     <description>Recent content in Blog on Shon Inouye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/blog/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Tidy Tuesday Analysis - Tour de France</title>
+      <link>/blog/tidy-tuesday-analysis-tour-de-france/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/blog/tidy-tuesday-analysis-tour-de-france/</guid>
+      <description>Tidy Tuesday This is my first (published) analysis of Tidy Tuesday data. Tidy Tuesday is a data project that allows anyone to practice their wrangling and data visualization skills on weekly posted datasets. Check out out the Tidy Tuesday GitHub repo to learn more and #TidyTuesday on Twitter to see some examples.
+ Tour de France - Intro This Tidy Tuesday analysis revolves around Tour de France data. Tour de France is the world’s most prestegious and difficult bicycle race that occurs every summer in France.</description>
     </item>
     
   </channel>
