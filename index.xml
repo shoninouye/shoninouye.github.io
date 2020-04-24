@@ -6,10 +6,20 @@
     <description>Recent content on Shon Inouye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tidy Tuesday Analysis - GDPR Violations</title>
+      <link>/blog/tidy-tuesday-analysis-gdpr-violations/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tidy-tuesday-analysis-gdpr-violations/</guid>
+      <description>Introduction Data protection and privacy is a growing concern for many as we move into a society where data can be monetized and utilized across a wide range of fields. This week’s Tidy Tuesday data consists of GDPR violations from Privacy Affairs. From the Tidy Tuesday GitHub repo and related Wikipedia article:
+ The General Data Protection Regulation (EU) 2016/679 (GDPR) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA).</description>
+    </item>
     
     <item>
       <title>Tidy Tuesday Analysis - Hip-hop Ratings</title>
