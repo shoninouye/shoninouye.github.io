@@ -6,10 +6,21 @@
     <description>Recent content on Shon Inouye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>COVID-19 Dashboard</title>
+      <link>/projects/covid-19-dashboard/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/covid-19-dashboard/</guid>
+      <description> View the official dashboard here: https://shoninouye.shinyapps.io/covid19_dashboard/
+Check out the code for this project on GitHub!
+ </description>
+    </item>
     
     <item>
       <title>Tidy Tuesday Analysis - GDPR Violations</title>
