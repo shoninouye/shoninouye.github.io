@@ -6,10 +6,19 @@
     <description>Recent content on Shon Inouye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tidy Tuesday Analysis — African American Achievements</title>
+      <link>/blog/tidy-tuesday-analysis-african-american-achievements/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tidy-tuesday-analysis-african-american-achievements/</guid>
+      <description>Introduction This week’s Tidy Tuesday data consists of data on African American achievements throughout history. Given the recent events surrounding the Black Lives Matter movement, it seems fitting that we take some time to recognize the achievements of Black individuals and bring attention to the racism that they have faced and continue to face. You can take a look at this week’s data and how it was collected on the Tidy Tuesday GitHub repo:</description>
+    </item>
     
     <item>
       <title>COVID-19 Dashboard</title>
@@ -17,10 +26,8 @@
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/projects/covid-19-dashboard/</guid>
-      <description> View the official dashboard here: https://shoninouye.shinyapps.io/covid19_dashboard/
-Check out the code for this project on GitHub!
-Status: Work in progress
- </description>
+      <description>This dashboard takes data from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University. I periodically run an R script that extracts data from the repo, cleans it, and uploads it to a PostgreSQL database on AWS. The scripts for the Shiny dashboard connect to that database and produce the dashboards that are then hosted on shinyapps.io.
+View the official dashboard here: https://shoninouye.</description>
     </item>
     
     <item>

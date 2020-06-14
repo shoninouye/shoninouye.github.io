@@ -17,10 +17,8 @@
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/projects/covid-19-dashboard/</guid>
-      <description> View the official dashboard here: https://shoninouye.shinyapps.io/covid19_dashboard/
-Check out the code for this project on GitHub!
-Status: Work in progress
- </description>
+      <description>This dashboard takes data from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University. I periodically run an R script that extracts data from the repo, cleans it, and uploads it to a PostgreSQL database on AWS. The scripts for the Shiny dashboard connect to that database and produce the dashboards that are then hosted on shinyapps.io.
+View the official dashboard here: https://shoninouye.</description>
     </item>
     
   </channel>
