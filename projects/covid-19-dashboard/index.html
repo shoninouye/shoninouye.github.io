@@ -24,7 +24,7 @@
         "datePublished": "2020-05-16 00:00:00 \x2b0000 UTC",
         "dateModified" : "2020-05-16 00:00:00 \x2b0000 UTC",
         "url" : "\/projects\/covid-19-dashboard\/",
-        "wordCount" : "19",
+        "wordCount" : "84",
         "keywords" : [ "Blog" ]
     }
     </script>
@@ -67,7 +67,7 @@
 <meta itemprop="description" content="A dashboard containing maps and trends of the COVID-19 pandemic">
 <meta itemprop="datePublished" content="2020-05-16T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-05-16T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="19">
+<meta itemprop="wordCount" content="84">
 
 
 
@@ -471,6 +471,7 @@ if (!doNotTrack) {
     
 
 
+<p>This dashboard takes data from the <a href="https://github.com/CSSEGISandData/COVID-19">COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University</a>. I periodically run an R script that extracts data from the repo, cleans it, and uploads it to a <a href="https://aws.amazon.com/rds/postgresql/">PostgreSQL database on AWS</a>. The scripts for the Shiny dashboard connect to that database and produce the dashboards that are then hosted on <a href="https://www.shinyapps.io/">shinyapps.io</a>.</p>
 <p>View the official dashboard here: <a href="https://shoninouye.shinyapps.io/covid19_dashboard/" class="uri">https://shoninouye.shinyapps.io/covid19_dashboard/</a></p>
 <p>Check out the code for this project on <a href="https://github.com/shoninouye/covid19-dashboard">GitHub</a>!</p>
 <p><strong>Status: Work in progress</strong></p>
