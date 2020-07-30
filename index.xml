@@ -6,10 +6,20 @@
     <description>Recent content on Shon Inouye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Twitch Analysis</title>
+      <link>/projects/twitch-analysis/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/twitch-analysis/</guid>
+      <description>Twitch Analysis Twitch.tv has gained massive popularity in recent years and is currently the world&amp;rsquo;s leading video live streaming service. The site primarily focuses on video game live streaming and broadcasts of esports competitions, but is also home to music broadcasts, creative content, and more recently, &amp;ldquo;in real life&amp;rdquo; streams.
+This project is an ongoing analysis of Twitch data utilizing Python in an effort to understand the trends and habits of popular streamers.</description>
+    </item>
     
     <item>
       <title>Tidy Tuesday Analysis — African American Achievements</title>
