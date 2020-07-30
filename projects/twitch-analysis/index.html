@@ -1,0 +1,1044 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "projects",
+        "name" : "Twitch Analysis",
+        "headline" : "Twitch Analysis",
+        "description" : "An ongoing analysis of the Twitch streaming platform using the Twitch API",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-07-30 00:00:00 \x2b0000 UTC",
+        "dateModified" : "2020-07-30 00:00:00 \x2b0000 UTC",
+        "url" : "\/projects\/twitch-analysis\/",
+        "wordCount" : "1049",
+        "keywords" : [ "Blog" ]
+    }
+    </script>
+        
+            
+                <title>Twitch Analysis</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.68.3" />
+        
+
+
+        
+            <meta name="author" content="Shon Inouye">
+        
+        
+            <meta name="description" content="An ongoing analysis of the Twitch streaming platform using the Twitch API">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Twitch Analysis"/>
+<meta name="twitter:description" content="An ongoing analysis of the Twitch streaming platform using the Twitch API"/>
+<meta name="twitter:site" content="@shoninouye"/>
+
+        <meta property="og:title" content="Twitch Analysis" />
+<meta property="og:description" content="An ongoing analysis of the Twitch streaming platform using the Twitch API" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/projects/twitch-analysis/" />
+<meta property="article:published_time" content="2020-07-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-30T00:00:00+00:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="Twitch Analysis">
+<meta itemprop="description" content="An ongoing analysis of the Twitch streaming platform using the Twitch API">
+<meta itemprop="datePublished" content="2020-07-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1049">
+
+
+
+<meta itemprop="keywords" content="" />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-163019700-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">projects</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/projects/">
+                            <i class="fa fa-list">&nbsp;</i>Projects
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Projects
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/tidy-tuesday-analysis-african-american-achievements/">Tidy Tuesday Analysis — African American Achievements</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-11'>
+                                    June 11, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/tidy-tuesday-analysis-gdpr-violations/">Tidy Tuesday Analysis - GDPR Violations</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-04-23'>
+                                    April 23, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/tidy-tuesday-analysis-hip-hop-ratings/">Tidy Tuesday Analysis - Hip-hop Ratings</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-04-17'>
+                                    April 17, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/tidy-tuesday-analysis-tour-de-france/">Tidy Tuesday Analysis - Tour de France</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-04-09'>
+                                    April 9, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fprojects%2ftwitch-analysis%2f&amp;text=Twitch%20Analysis&amp;via=shoninouye" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fprojects%2ftwitch-analysis%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fprojects%2ftwitch-analysis%2f&amp;title=Twitch%20Analysis" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fprojects%2ftwitch-analysis%2f&amp;title=Twitch%20Analysis" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Shon%20Inouye&amp;body=%2fprojects%2ftwitch-analysis%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/projects/twitch-analysis/">Twitch Analysis</a></h1>
+            
+        
+        
+            <p>An ongoing analysis of the Twitch streaming platform using the Twitch API</p>
+        
+    </div>
+    <div class="meta">
+
+      <span class="author">Shon Inouye</span>
+      <span class="author"></span>
+      
+        <a href="" target="_blank"></a>
+      
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fprojects%2ftwitch-analysis%2f&amp;text=Twitch%20Analysis&amp;via=shoninouye" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fprojects%2ftwitch-analysis%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fprojects%2ftwitch-analysis%2f&amp;title=Twitch%20Analysis" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fprojects%2ftwitch-analysis%2f&amp;title=Twitch%20Analysis" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Shon%20Inouye&amp;body=%2fprojects%2ftwitch-analysis%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+      </ul>
+    </section>
+  
+
+  
+  <div id="content">
+    <h1 id="twitch-analysis">Twitch Analysis</h1>
+<p><a href="https://www.twitch.tv/p/en/about">Twitch.tv</a> has gained massive popularity in recent years and is currently the world&rsquo;s leading video live streaming service. The site primarily focuses on video game live streaming and broadcasts of esports competitions, but is also home to music broadcasts, creative content, and more recently, &ldquo;in real life&rdquo; streams.</p>
+<p>This project is an ongoing analysis of Twitch data utilizing Python in an effort to understand the trends and habits of popular streamers. As new mediums of entertainment (such as streaming) emerge, the opportunity to explore the stories and insights that are hidding within the data from these platforms come with it.</p>
+<h2 id="setup">Setup</h2>
+<p>In this and future analyses, I will be utilizing the <a href="https://dev.twitch.tv/docs/api/">Twitch API</a> to collect data.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Install packages</span>
+<span style="color:#f92672">import</span> config
+<span style="color:#f92672">import</span> requests
+<span style="color:#f92672">import</span> json
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">import</span> datetime
+
+sns<span style="color:#f92672">.</span>set(style<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;darkgrid&#34;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Set keys and links</span>
+OAUTH <span style="color:#f92672">=</span> config<span style="color:#f92672">.</span>OAUTH
+CLIENT_ID <span style="color:#f92672">=</span> config<span style="color:#f92672">.</span>CLIENT_ID
+CLIENT_SECRET <span style="color:#f92672">=</span> config<span style="color:#f92672">.</span>CLIENT_SECRET
+
+BASE_URL <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;v5&#34;</span>:<span style="color:#e6db74">&#34;https://api.twitch.tv/kraken/&#34;</span>,
+            <span style="color:#e6db74">&#34;new&#34;</span>:<span style="color:#e6db74">&#34;https://api.twitch.tv/helix/&#34;</span>}
+HEADERS <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Authorization&#34;</span>:<span style="color:#e6db74">&#34;Bearer {}&#34;</span><span style="color:#f92672">.</span>format(OAUTH),
+           <span style="color:#e6db74">&#34;client-id&#34;</span>:CLIENT_ID}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Get response from API call</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_response</span>(query, params <span style="color:#f92672">=</span> {}, version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;new&#34;</span>):
+    response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(BASE_URL[version] <span style="color:#f92672">+</span> query,
+                            headers <span style="color:#f92672">=</span> HEADERS,
+                            params <span style="color:#f92672">=</span> params)
+    <span style="color:#66d9ef">return</span> response
+    
+<span style="color:#75715e"># Get user info</span>
+<span style="color:#75715e"># https://dev.twitch.tv/docs/api/reference#get-users</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_query_user_info</span>(login):
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;users?login={}&#34;</span><span style="color:#f92672">.</span>format(login)
+
+<span style="color:#75715e"># Get video info</span>
+<span style="color:#75715e"># https://dev.twitch.tv/docs/api/reference#get-videos</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_query_video_info</span>(user_id):
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;videos?user_id={}&#34;</span><span style="color:#f92672">.</span>format(user_id)
+</code></pre></div><h2 id="collect-streamer-information">Collect streamer information</h2>
+<p>For this analysis, I will be taking a look at a group of streamers and online content creators called <a href="https://en.wikipedia.org/wiki/OfflineTV">OfflineTV</a>. These individuals happen to be the streamers I follow the most, so I wanted to take a look at what the data can tell me about their streaming habits.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># List OTV members</span>
+otv_members <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;scarra&#34;</span>,<span style="color:#e6db74">&#34;pokimane&#34;</span>,<span style="color:#e6db74">&#34;lilypichu&#34;</span>,<span style="color:#e6db74">&#34;disguisedtoast&#34;</span>,<span style="color:#e6db74">&#34;yvonnie&#34;</span>,<span style="color:#e6db74">&#34;michaelreeves&#34;</span>]
+
+<span style="color:#75715e"># Get otv member info</span>
+otv_member_info <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame()
+
+<span style="color:#66d9ef">for</span> member <span style="color:#f92672">in</span> otv_members:
+    member_json <span style="color:#f92672">=</span> get_response(get_query_user_info(member))<span style="color:#f92672">.</span>json()[<span style="color:#e6db74">&#39;data&#39;</span>]
+    member_df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>json_normalize(member_json)
+    otv_member_info <span style="color:#f92672">=</span> otv_member_info<span style="color:#f92672">.</span>append(member_df)
+    
+otv_member_info
+</code></pre></div><table>
+<thead>
+<tr>
+<th>id</th>
+<th>login</th>
+<th>display_name</th>
+<th>broadcaster_type</th>
+<th>description</th>
+<th>profile_image_url</th>
+<th>offline_image_url</th>
+<th>view_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22253819</td>
+<td>scarra</td>
+<td>Scarra</td>
+<td>partner</td>
+<td>I&rsquo;m an ex league of legends pro mid laner turn&hellip;</td>
+<td>https://static-cdn&hellip;</td>
+<td>https://static-cdn&hellip;</td>
+<td>92497991</td>
+</tr>
+<tr>
+<td>44445592</td>
+<td>pokimane</td>
+<td>pokimane</td>
+<td>partner</td>
+<td>Welcome to my channel! :) I play Fortnite, Lea&hellip;</td>
+<td>https://static-cdn&hellip;</td>
+<td>https://static-cdn&hellip;</td>
+<td>119593646</td>
+</tr>
+<tr>
+<td>31106024</td>
+<td>lilypichu</td>
+<td>lilypichu</td>
+<td>partner</td>
+<td>Hi everyone! Make sure to read the rules. o/</td>
+<td>https://static-cdn&hellip;</td>
+<td>https://static-cdn&hellip;</td>
+<td>34381106</td>
+</tr>
+<tr>
+<td>87204022</td>
+<td>disguisedtoast</td>
+<td>DisguisedToast</td>
+<td></td>
+<td>Join this toast on a magical journey ride thro&hellip;</td>
+<td>https://static-cdn&hellip;</td>
+<td>https://static-cdn..</td>
+<td>72444943</td>
+</tr>
+<tr>
+<td>45184940</td>
+<td>yvonnie</td>
+<td>yvonnie</td>
+<td>partner</td>
+<td>Hi, my name is Yvonne and I like to play games</td>
+<td>https://static-cdn&hellip;</td>
+<td>https://static-cdn&hellip;</td>
+<td>3330408</td>
+</tr>
+<tr>
+<td>469790580</td>
+<td>michaelreeves</td>
+<td>michaelreeves</td>
+<td>partner</td>
+<td>gamers gaming</td>
+<td>https://static-cdn&hellip;</td>
+<td></td>
+<td>2047210</td>
+</tr>
+</tbody>
+</table>
+<p>Out of the 6 current members, we can see that 5 of them are <a href="https://www.twitch.tv/p/partners/">&ldquo;partner&rdquo;</a>s, which means that they earn revenue from streaming and gain access to other special Twitch features. The one member of the group who is not partnered is Disguised Toast, who <a href="https://www.washingtonpost.com/video-games/2019/11/22/facebook-enters-streamer-bidding-wars-signs-disguised-toast/">signed a contract</a> to stream on Facebook Gaming in November of 2019.</p>
+<h2 id="distribution-of-time-spent-streaming">Distribution of time spent streaming</h2>
+<p>After setting up the API and collecting basic information on the members of OfflineTV, I could now pull more specific data. I wanted to look at how long these streamers were streaming during each of their live sessions so I pulled data on their <a href="https://help.twitch.tv/s/article/video-on-demand?language=en_US">VODs</a> — an archive of previously streamed content. Due to the limitations of the VOD storage system and the API, this current iteration of my analysis limited me to the 100 most recent pieces of video content from each member.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Get otv video data</span>
+otv_videos <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame()
+
+<span style="color:#66d9ef">for</span> id <span style="color:#f92672">in</span> otv_member_info<span style="color:#f92672">.</span>id:
+    videos_json <span style="color:#f92672">=</span> get_response(get_query_video_info(id), params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;first&#34;</span>:<span style="color:#e6db74">&#34;100&#34;</span>})<span style="color:#f92672">.</span>json()[<span style="color:#e6db74">&#39;data&#39;</span>]
+    videos_df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>json_normalize(videos_json)
+    otv_videos <span style="color:#f92672">=</span> otv_videos<span style="color:#f92672">.</span>append(videos_df)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Clean created_at date</span>
+otv_videos[<span style="color:#e6db74">&#34;created_at&#34;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>to_datetime(otv_videos[<span style="color:#e6db74">&#34;created_at&#34;</span>])<span style="color:#f92672">.</span>dt<span style="color:#f92672">.</span>normalize()<span style="color:#f92672">.</span>dt<span style="color:#f92672">.</span>date
+
+<span style="color:#75715e"># Calculate total minutes streamed per video</span>
+otv_videos[<span style="color:#e6db74">&#34;hours&#34;</span>] <span style="color:#f92672">=</span> otv_videos[<span style="color:#e6db74">&#34;duration&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>extract(<span style="color:#e6db74">&#34;(\d*)(?=[h])&#34;</span>)<span style="color:#f92672">.</span>fillna(<span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>astype(float)
+otv_videos[<span style="color:#e6db74">&#34;minutes&#34;</span>] <span style="color:#f92672">=</span> otv_videos[<span style="color:#e6db74">&#34;duration&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>extract(<span style="color:#e6db74">&#34;(\d*)(?=[m])&#34;</span>)<span style="color:#f92672">.</span>fillna(<span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>astype(float)
+otv_videos[<span style="color:#e6db74">&#34;seconds&#34;</span>] <span style="color:#f92672">=</span> otv_videos[<span style="color:#e6db74">&#34;duration&#34;</span>]<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>extract(<span style="color:#e6db74">&#34;(\d*)(?=[s])&#34;</span>)<span style="color:#f92672">.</span>fillna(<span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>astype(float)
+otv_videos[<span style="color:#e6db74">&#34;total_minutes&#34;</span>] <span style="color:#f92672">=</span> otv_videos[<span style="color:#e6db74">&#34;hours&#34;</span>]<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span> <span style="color:#f92672">+</span> otv_videos[<span style="color:#e6db74">&#34;minutes&#34;</span>] <span style="color:#f92672">+</span> otv_videos[<span style="color:#e6db74">&#34;seconds&#34;</span>]<span style="color:#f92672">/</span><span style="color:#ae81ff">60</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Calculate total minutes streamed per day</span>
+otv_videos_sum <span style="color:#f92672">=</span> otv_videos<span style="color:#f92672">.</span>groupby([<span style="color:#e6db74">&#34;user_name&#34;</span>,<span style="color:#e6db74">&#34;created_at&#34;</span>])<span style="color:#f92672">.</span>sum()<span style="color:#f92672">.</span>reset_index()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Sort index by mean</span>
+sorted_index <span style="color:#f92672">=</span> otv_videos_sum<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;user_name&#34;</span>)[<span style="color:#e6db74">&#34;total_minutes&#34;</span>]<span style="color:#f92672">.</span>median()<span style="color:#f92672">.</span>sort_values(ascending<span style="color:#f92672">=</span>False)<span style="color:#f92672">.</span>index
+
+<span style="color:#75715e"># Plot boxplot</span>
+plt<span style="color:#f92672">.</span>subplots(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">5</span>))
+ax <span style="color:#f92672">=</span> sns<span style="color:#f92672">.</span>boxplot(data <span style="color:#f92672">=</span> otv_videos_sum,
+            x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;user_name&#34;</span>, 
+            y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;total_minutes&#34;</span>,
+            order <span style="color:#f92672">=</span> sorted_index,
+            palette <span style="color:#f92672">=</span> sns<span style="color:#f92672">.</span>color_palette(<span style="color:#e6db74">&#34;Paired&#34;</span>))
+ax<span style="color:#f92672">.</span>tick_params(rotation<span style="color:#f92672">=-</span><span style="color:#ae81ff">45</span>)
+plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Distribution of Time Spent Streaming per Session&#34;</span>)
+plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Streamer&#34;</span>)
+plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Minutes spent streaming&#34;</span>)
+</code></pre></div><p><img src="output_12_1.png" alt="png"></p>
+<p>We can see that, on average, Scarra streams the most with roughly half of his streams lasting from around 200 to 600 minutes (3.3-10 hours). Michael Reeves, Pokimane, and Yvonnie all seem to stream for roughly the same amount of time, that is somewhere between 200 and 400 minutes (3.3-6.6 hours). Finally, we have LilyPichu and Disguised Toast, who both average below 4.3 hours.</p>
+<h3 id="cumulative-time-spent-streaming">Cumulative time spent streaming</h3>
+<p>The next things I wanted to look at was their streaming trends over time. Members like Scarra and Pokimane are known to have consistant streaming schedules and members like LilyPichu have historically been more inconsistant. However, habits do change, and so I wanted to see how this bunch compared to one another in recent months.</p>
+<p>The API and VOD limits mentioned above led me to the decision to only take data since the end of February. I calculated each member&rsquo;s cummulative number of minutes spent streaming since February 23rd, 2020 in order to compare them.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Filter date range</span>
+min_date <span style="color:#f92672">=</span> otv_videos_sum[otv_videos_sum[<span style="color:#e6db74">&#34;user_name&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pokimane&#34;</span>][<span style="color:#e6db74">&#34;created_at&#34;</span>]<span style="color:#f92672">.</span>min()
+max_date <span style="color:#f92672">=</span> otv_videos_sum[otv_videos_sum[<span style="color:#e6db74">&#34;user_name&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;pokimane&#34;</span>][<span style="color:#e6db74">&#34;created_at&#34;</span>]<span style="color:#f92672">.</span>max()
+date_range <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>date_range(min_date, max_date, freq <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D&#34;</span>)
+otv_videos_filtered <span style="color:#f92672">=</span> otv_videos_sum[otv_videos_sum[<span style="color:#e6db74">&#34;created_at&#34;</span>] <span style="color:#f92672">&gt;=</span> min_date]
+
+<span style="color:#75715e"># Fill missing dates</span>
+otv_videos_filled <span style="color:#f92672">=</span> (otv_videos_filtered<span style="color:#f92672">.</span>set_index(<span style="color:#e6db74">&#34;created_at&#34;</span>)
+                                          <span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;user_name&#34;</span>)
+                                          <span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">.</span>reindex(date_range))
+                                          <span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#34;user_name&#34;</span>, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+                                          <span style="color:#f92672">.</span>reset_index()
+                                          <span style="color:#f92672">.</span>rename(columns <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;level_1&#34;</span>:<span style="color:#e6db74">&#34;created_at&#34;</span>})
+                                          <span style="color:#f92672">.</span>fillna(<span style="color:#ae81ff">0</span>))
+
+<span style="color:#75715e"># Calculate cumulative sum of minutes streamed for each otv member</span>
+otv_videos_filled[<span style="color:#e6db74">&#34;total_minutes_cumsum&#34;</span>] <span style="color:#f92672">=</span> otv_videos_filled<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;user_name&#34;</span>)[<span style="color:#e6db74">&#34;total_minutes&#34;</span>]<span style="color:#f92672">.</span>cumsum()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Pivot data for plotting</span>
+otv_videos_pivot <span style="color:#f92672">=</span> otv_videos_filled[[<span style="color:#e6db74">&#34;user_name&#34;</span>,<span style="color:#e6db74">&#34;total_minutes_cumsum&#34;</span>,<span style="color:#e6db74">&#34;created_at&#34;</span>]]<span style="color:#f92672">.</span>pivot(index <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;created_at&#34;</span>, 
+                                                                     columns <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;user_name&#34;</span>, 
+                                                                     values <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;total_minutes_cumsum&#34;</span>)
+
+<span style="color:#75715e"># Plot cummulative minutes </span>
+fig <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>figure()
+otv_videos_pivot<span style="color:#f92672">.</span>plot(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">5</span>))
+
+plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Cumulative Stream Time of Saved Videos&#34;</span>)
+plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Date&#34;</span>)
+plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Cumulative minutes&#34;</span>)
+
+plt<span style="color:#f92672">.</span>show()
+</code></pre></div><p><img src="output_17_1.png" alt="png"></p>
+<p>I originally thought that Twitch&rsquo;s 60 day past-broadcast VOD storage limit would have limited every member on their video data availability, but that doesn&rsquo;t seem to be the case for Pokimane. This is something that I&rsquo;d like to dive deeper in a future analysis, as I wonder if this surplus of extra data is related to the video content type.</p>
+<p>Looking at the rest of the members, we see that Scarra has been streaming a whole lot in a short amount of time and that both LilyPichu and Yvonnie share similar stream time. Michael Reeves is right below them, which is understandable considering he only began streaming in mid-June. Finally, we see Disguised Toast at the bottom with almost zero stream time due to his Facebook Gaming contract&rsquo;s limitations on streaming with other competing platforms such as Twitch.</p>
+<h2 id="future-analysis">Future analysis</h2>
+<p><strong>Status: Work in progress</strong></p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+    
+        
+
+        
+        
+    
+
+    
+    
+</ul>
+
+  </footer>
+</article>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/img/main/logo.jpg" class="intro-circle" width="200px" alt="Hugo Future Imperfect" /></a>
+      
+    
+    
+      <header>
+        <h2>Shon Inouye</h2>
+        <p>Aspiring Data Scientist</p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/shoninouye" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/shoninouye" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/shoninouye" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:shoninouye@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/tidy-tuesday-analysis-african-american-achievements/">Tidy Tuesday Analysis — African American Achievements</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-11'>
+                June 11, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/tidy-tuesday-analysis-gdpr-violations/">Tidy Tuesday Analysis - GDPR Violations</a>
+              </h3>
+              
+              <time class="published" datetime='2020-04-23'>
+                April 23, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/tidy-tuesday-analysis-hip-hop-ratings/">Tidy Tuesday Analysis - Hip-hop Ratings</a>
+              </h3>
+              
+              <time class="published" datetime='2020-04-17'>
+                April 17, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/tidy-tuesday-analysis-tour-de-france/">Tidy Tuesday Analysis - Tour de France</a>
+              </h3>
+              
+              <time class="published" datetime='2020-04-09'>
+                April 9, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/shoninouye" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/shoninouye" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/shoninouye" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:shoninouye@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          Shon Inouye
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+
